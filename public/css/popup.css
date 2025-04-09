@@ -1,0 +1,46 @@
+.overlay {
+    overflow:scroll;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10000000000 !important;
+}
+.overlay:target {
+    visibility: visible;
+    opacity: 1;
+}
+#popupBody{
+	width: 90%;
+	padding: 1%;
+	border-radius: 15px;
+	box-shadow: 0 0 5px #CCC;
+    background: #FFF;
+	position: relative;
+	margin: 1% auto;
+}
+#cerrar{
+    position: absolute;
+    top: 0px;
+    right: 29px;
+    font-size: 51px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #F00;
+    transition: all 200ms;
+    z-index: 100000;
+}
+@media only screen and (max-width : 1100px) {
+    #popupBody{
+        width: 98%;
+    }
+    #cerrar {
+        top: -7px;
+        right: 11px;
+    }
+}

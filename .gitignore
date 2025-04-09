@@ -1,30 +1,37 @@
+# Dependencias de Composer
 /vendor/
+
+# Dependencias de Node (si usas NPM o Yarn)
 node_modules/
-npm-debug.log
-yarn-error.log
 
-# Laravel 4 specific
-bootstrap/compiled.php
-app/storage/
-
-# Laravel 5 & Lumen specific
-public/storage
-public/hot
-
-# Laravel 5 & Lumen specific with changed public path
-public_html/storage
-public_html/hot
-
-storage/*.key
+# Archivos de entorno
 .env
+.env.*.local
+
+# Laravel 7
+/storage/*.key
+/storage/debugbar/
+.storage/framework/cache/data/
+.storage/framework/sessions/
+.storage/framework/views/
+.storage/logs/
+
+# Directorios de pruebas
+/tests/.phpunit.result.cache
+
+# Directorios de caché y compilación
+/bootstrap/cache/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Archivos de configuración específicos del entorno
 Homestead.yaml
 Homestead.json
-/.vagrant
-.phpunit.result.cache
 
-/public/build
-/storage/pail
-.env.backup
-.env.production
-.phpactor.json
-auth.json
+# Archivos de logs
+*.log
+
+# Otros archivos que no deberían ser subidos a Git
+*.sqlite

@@ -1,0 +1,47 @@
+@extends('layouts.layouts')
+
+@section("styles")
+    <link href="{{asset('assets/js/bootstrap-fileinput/css/fileinput.min.css')}}" rel="stylesheet" type="text/css"/>
+@endsection
+
+@section("scripts")
+    <script src="{{asset("assets/js/foto.js")}}" type="text/javascript"></script>
+    <script src="{{asset("assets/js/bootstrap-fileinput/js/fileinput.min.js")}}" type="text/javascript"></script>
+    <script src="{{asset("assets/js/bootstrap-fileinput/js/locales/es.js")}}" type="text/javascript"></script>
+    <script src="{{asset("assets/js/bootstrap-fileinput/themes/fas/theme.min.js")}}" type="text/javascript"></script>
+@endsection
+
+@section('titulo')
+    <div class="w-100 alto">
+        <div class="box-header with-border">
+            <a href="{{route('usuarios.index')}}" class="btn btn-secondary btn-sm pull-right rounded-pill text-white" style="width: 130px;"><i class="fa fa-fw fa-reply-all"></i>{{ __('adminlte::adminlte.return') }}</a> 
+        </div>
+    </div>
+    <div class="w-100 alto1">
+        <i class="fa fa-user"></i><span class="ml-2">{{ __('adminlte::adminlte.user') }}</span>
+    </div> 
+@stop
+
+@section('contenido')
+    <div class="row">
+        <div class="col-lg-8 offset-md-2">
+            <div class="card text-center shadow-lg p-3 mb-5 bg-white rounded">
+                <div class="card-header">
+                    <h3 class="text-left"><i class="fa fa-plus fa-1x"></i><span class="ml-2">{{ __('adminlte::adminlte.update') }}</span></h3>    
+                </div>
+                <form action="{{route('usuarios.update', $data->id)}}" id="form-general" class="form-horizontal" method="POST" autocomplete="off" enctype="multipart/form-data">
+                    @csrf @method("put")
+                    <div class="card-body">
+                        @include('includes.form-error')
+                        @include('includes.mensaje')
+                        @include('seguridad.usuario.form')
+                    </div>
+                    <div class="card-footer text-muted">                    
+                        @include('includes.boton-form-editar')
+                    </div>
+                </form>
+                <a href="{{asset('img/usuario/formato.png')}}" style="text-align:right;" download="Formato de Imagen.png">Descargar Formato de Imagen</a>
+            </div>
+        </div>
+    </div>
+@stop

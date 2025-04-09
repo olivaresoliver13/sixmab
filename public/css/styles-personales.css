@@ -1,0 +1,190 @@
+body{min-width: 320px;}
+
+body {
+    background-color: #f4f6f9 !important;
+}
+h1 {
+    line-height: 1 !important;
+}
+.navbar-badge {
+    font-size: 0.9rem !important;
+}
+.color-ico:hover{
+    color: #000 !important;
+}
+.fas.fa-bars, .nav-link {
+    color: #fff !important;
+}
+.dddd {
+    width: 0 !important;
+    right: 13px;
+    top: 4px;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    top: 4px;
+    position: relative;
+}
+.breadcrumb.float-sm-right {
+    float: right !important;
+}
+.info-box-content {
+    height: auto !important;
+    width: 100px !important;
+}
+.header-ico{
+    position: relative;
+}
+.modal-header {
+    border-radius: 0px !important;
+}
+.modal-dialog {
+    max-width: 630px !important;
+}
+.psimg{
+    width: 100%;
+}
+.modal-header {
+    background: #28a745;
+}
+#pricing-table {
+    margin: 0 0 0 0;
+    text-align: center;
+}
+#pricing-table .plan {
+    font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+    text-shadow: 0 1px rgba(255,255,255,.8);        
+    background: #fff;      
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 20px;
+    width: 259px;
+    float: left;
+    position: relative;
+    background: #ffffff;
+    margin: 10px 15px !important;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(133,133,133,1);
+    box-shadow: 0px 0px 10px 0px rgba(133,133,133,1);
+    border-radius: 40px;
+}
+#pricing-table .plan:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0);
+}
+#pricing-table .plan1 {
+    font: 12px 'Lucida Sans', 'trebuchet MS', Arial, Helvetica;
+    text-shadow: 0 1px rgba(255,255,255,.8);        
+    background: #fff;      
+    border: 1px solid #ddd;
+    color: #333;
+    padding: 5px;
+    width: 300px;
+    float: left;
+    position: relative;
+    background: #ffffff;
+    margin: 10px 15px !important;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(133,133,133,1);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(133,133,133,1);
+    box-shadow: 0px 0px 10px 0px rgba(133,133,133,1);
+}
+#pricing-table .plan1:hover {
+    -webkit-box-shadow: 0px 0px 10px 0px rgb(0, 0, 0);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0);
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0);
+}
+#pricing-table h3 {
+    font-size: 20px;
+    font-weight: normal;
+    padding: 20px;
+    margin: -20px -20px 50px -20px;
+    background-color: #eee;
+    background-image: linear-gradient(#9a9a9a, #eee);
+    border-radius: 40px 40px 0 0;
+}
+#pricing-table h3 span {
+    display: block;
+    font: bold 25px/100px Georgia, Serif;
+    color: #777;
+    background: #fff;
+    border: 5px solid #fff;
+    height: 110px;
+    width: 110px;
+    margin: 10px auto -65px;
+    border-radius: 100px;
+    box-shadow: 0 5px 20px #ddd inset, 0 1px 7px #999 inset;
+}
+.layout-fixed .main-sidebar {
+    z-index: 5555555555;
+}
+/* --------------- */
+
+#pricing-table ul {
+    margin: 20px 0 0 0;
+}
+.bg-white.btn {
+    border-color: #ced4da !important;
+}
+.filter-option-inner-inner {
+    color: #939ba2 !important;
+}
+.sidebar-dark-green .nav-sidebar>.nav-item>.nav-link.active{
+    border-radius: 30px 0 40px 0 !important;    
+}
+.nav-treeview>.nav-item>.nav-link.active{
+    background-color: rgb(86, 123, 94) !important;
+    border-radius: 30px 0 40px 0 !important;
+}
+/* CSS para Tooltip arriba */
+.tooltip.top .tiptext{
+    margin-left: -60px;
+    bottom: 150%;
+    left: 50%;
+}
+.tooltip.top .tiptext::after{
+    margin-left: -5px;
+    top: 100%;
+    left: 50%;
+    border-color: #2E2E2E transparent transparent transparent;
+}
+.row {
+    width: 100%;
+}
+.dist-ico {
+    bottom: -28px;
+}
+.pl3 {
+    bottom: 20px;
+    position: relative;
+}
+.ssa {
+    bottom: 41px;
+    position: relative;
+}
+.ssa1 {
+    bottom: -10px;
+    position: relative;
+}
+.buscar-sixmab {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    margin-bottom: 10px;
+    float: right;
+}
+.navbar-nav.ml-auto {
+    left: -43px;
+    position: relative;
+}
+.brand-link {
+    padding: .5rem;
+}
+.help-block.help-block-error {
+    color: red;
+    font-size: 0.7em;
+    float: left;
+}
+.form-group.has-error .form-control, .form-group.has-error .input-group-addon {
+    border-color: red;
+    box-shadow: none;
+}
